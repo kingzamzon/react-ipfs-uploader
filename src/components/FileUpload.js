@@ -3,7 +3,7 @@ import { Form, Button, Badge, ProgressBar, Container } from 'react-bootstrap'
 import { create as ipfsHttpClient } from 'ipfs-http-client'
 const ipfs = ipfsHttpClient('https://ipfs.infura.io:5001/api/v0')
 
-export const FileUpload = ({ setUrl }) => {
+export const FileUpload = ({ setUrl, setFile }) => {
     const [file, setFile] = useState({})
     const [fileUrl, setFileUrl] = useState('')
     const [loading, setLoading] = useState(false)
